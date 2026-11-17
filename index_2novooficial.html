@@ -78,6 +78,23 @@ section[id]{scroll-margin-top:90px}
 .float-wa{position:fixed;right:22px;bottom:22px;width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 25px rgba(0,0,0,.25);z-index:50}
 </style>
 
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1462074586038569');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1462074586038569&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -363,6 +380,11 @@ Falar com especialista I9GED no WhatsApp
     frame.hidden=false; thumb.hidden=true;
   });
 })();
+</script>
+<script>
+document.querySelectorAll('a[href*="wa.me/"]').forEach(function(a){
+  a.addEventListener('click',function(){ try{ if(window.fbq) fbq('track','Contact'); }catch(e){} });
+});
 </script>
 </body>
 </html>
