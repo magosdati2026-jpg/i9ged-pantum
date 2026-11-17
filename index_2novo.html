@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I9GED — Locação Pantum Linha Efficient Elite Pro</title>
+<meta name="description" content="Multifuncional Pantum Linha Efficient Elite Pro por R$ 210/mês com 2.000 páginas, instalação, suporte em até 8h e sem multa.">
+<link rel="icon" href="logo-icone.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Outfit',system-ui,sans-serif;color:#111;background:#fff}
+a{color:inherit;text-decoration:none}a:hover{opacity:.9}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px;box-sizing:border-box}
+.nav a.lk:hover{color:#DC2626}
+.btn{transition:transform .15s ease, box-shadow .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.card{transition:transform .2s ease, box-shadow .2s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(17,17,17,.08)}
+@media (max-width: 860px){
+  .hero-grid{grid-template-columns:minmax(0,1fr) !important}
+  .grid4{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+  .grid2{grid-template-columns:minmax(0,1fr) !important}
+  .nav-links{display:none !important}
+  .h1{font-size:40px !important}
+  .stats{grid-template-columns:repeat(3,minmax(0,1fr)) !important}
+  .foot{flex-direction:column !important;gap:16px !important;text-align:center}
+}
+@media (max-width: 520px){
+  .grid4{grid-template-columns:minmax(0,1fr) !important}
+  .h1{font-size:36px !important}
+  .topbar-txt{font-size:12px !important}
+  .wa-txt{display:none}
+}
+
+html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:90px}
+.faq summary::-webkit-details-marker{display:none}
+.faq[open] .chev{transform:rotate(180deg)}
+.chev{transition:transform .2s}
+.vid-card{transition:transform .2s ease, box-shadow .2s ease}
+.vid-card:hover{transform:translateY(-3px);box-shadow:0 30px 70px rgba(17,17,17,.16) !important}
+.vid-card:hover .play > span{transform:scale(1.08)}
+.play > span{transition:transform .2s ease}
+
+.gal{display:grid;grid-template-columns:76px minmax(0,1fr);gap:14px;align-items:start}
+.gal-thumbs{display:flex;flex-direction:column;gap:12px}
+.gal-t{width:76px;height:76px;padding:4px;border:2px solid #E5E7EB;border-radius:12px;background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.gal-t img{max-width:100%;max-height:100%;object-fit:contain}
+.gal-t.active{border-color:#DC2626;box-shadow:0 0 0 3px rgba(220,38,38,.15)}
+.mini-vid{position:relative;width:100%;height:100%;border-radius:8px;background:linear-gradient(135deg,#111 0%,#5B0B0B 100%);display:flex;align-items:center;justify-content:flex-end;overflow:hidden}
+.mini-vid img{height:90%;margin-right:2px}
+.mini-play{position:absolute;inset:0;margin:auto;width:28px;height:28px;border-radius:50%;background:rgba(220,38,38,.92);display:flex;align-items:center;justify-content:center}
+.gal-main{position:relative;border:3px solid #DC2626;border-radius:16px;overflow:hidden;aspect-ratio:16/9;background:#111;box-shadow:0 24px 60px rgba(17,17,17,.18)}
+.vthumb{position:absolute;inset:0;display:block;background:radial-gradient(circle at 78% 50%,#7F1D1D 0%,#2A0A0A 45%,#0B0B0B 100%);color:#fff;overflow:hidden}
+.vt-text{position:absolute;left:6%;text-align:left;align-items:flex-start;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;line-height:.95;font-weight:900;letter-spacing:-.01em;z-index:2;text-shadow:0 4px 16px rgba(0,0,0,.5)}
+.vt-l1,.vt-l3{font-size:clamp(14px,2.3vw,30px)}
+.vt-l2{font-size:clamp(30px,5.2vw,68px);color:#EF4444;margin:2px 0 4px}
+.vt-l4{font-size:clamp(20px,3.4vw,44px);margin-top:4px;background:#DC2626;padding:2px 10px 4px;border-radius:6px;align-self:flex-start}
+.vt-img{position:absolute;right:5%;top:50%;transform:translateY(-50%);height:82%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(239,68,68,.35) 0%,rgba(239,68,68,0) 65%);display:flex;align-items:center;justify-content:center}
+.vt-img img{height:78%;width:auto;filter:blur(14px) grayscale(.25);transform:scale(1.08)}
+.vt-q{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:clamp(60px,9vw,120px);font-weight:900;color:#DC2626;text-shadow:0 4px 20px rgba(0,0,0,.35)}
+.rec{width:8px;height:8px;border-radius:50%;background:#EF4444;animation:pulse 1.4s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+.vt-play{left:50% !important}
+.vt-brand{position:absolute;left:6%;bottom:7%;font-size:11px;font-weight:700;letter-spacing:.14em;color:#FCA5A5;z-index:2}
+.vt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:78px;height:78px;border-radius:50%;background:rgba(220,38,38,.85);border:3px solid rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;padding:0 0 0 4px;box-sizing:border-box;z-index:3;transition:transform .2s ease, background .2s ease;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+.vthumb:hover .vt-play{transform:translate(-50%,-50%) scale(1.1);background:#DC2626}
+.vframe,.vfoto{position:absolute;inset:0}
+.vframe iframe{width:100%;height:100%;border:0}
+.vfoto{background:#fff;display:flex;align-items:center;justify-content:center}
+.vfoto img{height:92%;width:auto}
+[hidden]{display:none !important}
+@media (max-width:520px){.vt-l1,.vt-l3{font-size:11px}.vt-l2{font-size:22px}.vt-l4{font-size:15px;padding:1px 6px 2px}.vt-text{left:5%}.vt-brand{font-size:9px}.vt-img{right:2%;height:70%}.gal{grid-template-columns:minmax(0,1fr)}.gal-thumbs{flex-direction:row;order:2}.gal-t{width:64px;height:64px}.vt-play{width:60px;height:60px}}
+@media (max-width:860px){.vid-head{font-size:32px !important}}
+@media (max-width:520px){.vid-head{font-size:24px !important}}
+.float-wa{position:fixed;right:22px;bottom:22px;width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 25px rgba(0,0,0,.25);z-index:50}
+</style>
+
+</head>
+<body>
+
+<div style="width: 100%; min-height: 100vh; background: #ffffff;">
+
+<!-- Barra de oferta -->
+<div style="background: #111111; color: #ffffff; padding: 12px 16px; display: flex; justify-content: center; align-items: center; gap: 14px; flex-wrap: wrap; text-align: center;">
+<span style="background: #DC2626; color: #ffffff; font-size: 12px; font-weight: 800; letter-spacing: .08em; padding: 5px 10px; border-radius: 6px;">OFERTA ESPECIAL</span>
+<span class="topbar-txt" style="font-size: 14px; font-weight: 500;">Locação Pantum <b>Linha Efficient Elite Pro</b> + franquia de 2.000 páginas por apenas <b>R$ 210/mês</b>. Sem multa de cancelamento!</span>
+</div>
+
+<!-- Header -->
+<header style="border-bottom: 1px solid #EEEEEE; background: #ffffff; position: sticky; top: 0; z-index: 10;">
+<div class="wrap nav" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 84px;">
+<a href="#topo" style="display: flex; align-items: center; gap: 12px;">
+<img src="logo-icone.png" alt="" style="width: 46px; height: 46px; object-fit: contain;">
+<span style="display: flex; flex-direction: column; line-height: 1.1;">
+<span style="font-size: 22px; font-weight: 800; letter-spacing: -.01em;"><span style="color: #DC2626;">I9</span>GED</span>
+<span style="font-size: 11px; font-weight: 600; letter-spacing: .14em; color: #555555;">GESTÃO DE DISPOSITIVOS</span>
+</span>
+</a>
+<nav class="nav-links" aria-label="Seções" style="display: flex; gap: 32px; font-size: 15px; font-weight: 500; color: #374151;">
+<a class="lk" href="#solucao">A Solução</a>
+<a class="lk" href="#como-funciona">Como Funciona</a>
+<a class="lk" href="#valores">Valores</a>
+<a class="lk" href="#duvidas">Dúvidas</a>
+</nav>
+<a class="btn" target="_blank" rel="noopener" href="https://wa.me/5551980189946?text=Ol%C3%A1!%20Tenho%20interesse%20na%20loca%C3%A7%C3%A3o%20da%20multifuncional%20Pantum%20Linha%20Efficient%20Elite%20Pro." style="display: inline-flex; align-items: center; gap: 10px; background: #DC2626; color: #ffffff; font-weight: 700; font-size: 15px; padding: 13px 22px; border-radius: 12px; min-height: 44px; box-sizing: border-box; box-shadow: 0 8px 20px rgba(220,38,38,.25);">
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"></path></svg>
+<span class="wa-txt">Falar no WhatsApp</span>
+</a>
+</div>
+</header>
+
+<!-- Vídeo (primeira dobra) -->
+<section id="video" style="background: radial-gradient(circle at 50% 0%, #3B0A0A 0%, #111111 55%, #0B0B0B 100%); color: #ffffff; padding: 56px 0 64px;">
+<div class="wrap" style="display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center;">
+<span style="display: inline-flex; align-items: center; gap: 8px; background: rgba(220,38,38,.15); border: 1px solid rgba(248,113,113,.4); color: #FCA5A5; font-size: 13px; font-weight: 800; letter-spacing: .08em; padding: 8px 16px; border-radius: 999px;"><span class="rec" aria-hidden="true"></span>ASSISTA ANTES DE COMPRAR QUALQUER IMPRESSORA</span>
+<h2 class="vid-head" style="margin: 0; font-size: 44px; line-height: 1.1; font-weight: 800; letter-spacing: -.02em; max-width: 900px;">Conheça a máquina <span style="color: #EF4444;">chinesa</span> que está revolucionando o mercado de impressoras no Brasil</h2>
+<div class="gal-main" style="width: 100%; max-width: 960px;">
+<a id="vthumb" class="vthumb" href="https://www.youtube.com/watch?v=V4U0i-w0lzI" target="_blank" rel="noopener" aria-label="Assistir ao vídeo">
+<span class="vt-text">
+<span class="vt-l1">A MÁQUINA</span>
+<span class="vt-l2">CHINESA</span>
+<span class="vt-l3">QUE ESTÁ</span>
+<span class="vt-l3">REVOLUCIONANDO</span>
+<span class="vt-l4">O BRASIL</span>
+</span>
+<span class="vt-img"><img src="impressora-recorte.png" alt=""><span class="vt-q" aria-hidden="true">?</span></span>
+<span class="vt-brand">REVELADA NO VÍDEO</span>
+<span class="vt-play" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="#fff" style="display:block;width:52%;height:52%"><path d="M8 5v14l11-7z"></path></svg></span>
+</a>
+<div id="vframe" class="vframe" hidden></div>
+</div>
+<p style="margin: 0; font-size: 15px; color: #9CA3AF;">▶ Dê o play e descubra por que escritórios estão trocando de impressora</p>
+</div>
+</section>
+
+<!-- Hero -->
+<section id="topo" style="padding: 72px 0 80px;">
+<div class="wrap">
+<div style="display: flex; flex-direction: column; gap: 26px; align-items: center; text-align: center; max-width: 860px; margin: 0 auto;">
+<span style="display: inline-flex; align-items: center; gap: 8px; background: #FEF2F2; border: 1px solid #FECACA; color: #B91C1C; font-size: 13px; font-weight: 700; letter-spacing: .04em; padding: 8px 16px; border-radius: 999px;">
+<svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+PARA ESCRITÓRIOS DE CONTABILIDADE E ADVOCACIA
+</span>
+<h1 class="h1" style="margin: 0; font-size: 62px; line-height: 1.04; font-weight: 800; letter-spacing: -.03em;">Seu escritório não pode parar por causa de uma <span style="color: #DC2626;">impressora</span>.</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.65; color: #4B5563; max-width: 680px;">Tenha uma multifuncional profissional Pantum da <b style="color: #111111;">Linha Efficient Elite Pro</b> por apenas <b style="color: #111111;">R$ 210/mês</b>, com instalação e manutenção técnica da I9GED, franquia de 2.000 páginas e <b style="color: #111111;">liberdade total sem multa</b>.</p>
+<a class="btn" target="_blank" rel="noopener" href="https://wa.me/5551980189946?text=Ol%C3%A1!%20Tenho%20interesse%20na%20loca%C3%A7%C3%A3o%20da%20multifuncional%20Pantum%20Linha%20Efficient%20Elite%20Pro." style="display: inline-flex; align-items: center; gap: 14px; background: #DC2626; color: #ffffff; font-weight: 700; font-size: 17px; padding: 18px 30px; border-radius: 14px; box-shadow: 0 14px 30px rgba(220,38,38,.28);">
+Quero modernizar meu escritório
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+</a>
+<div class="stats" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; width: 100%; max-width: 640px; border-top: 1px solid #EEEEEE; padding-top: 26px; margin-top: 6px;">
+<div style="display: flex; flex-direction: column; gap: 6px; align-items: center;"><span style="font-size: 22px; font-weight: 800;">R$ 210<span style="font-size: 13px; font-weight: 400; color: #6B7280;">/mês</span></span><span style="font-size: 13px; color: #6B7280;">2.000 páginas</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; align-items: center;"><span style="font-size: 22px; font-weight: 800;">R$ 0,00</span><span style="font-size: 13px; color: #6B7280;">Sem multa</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; align-items: center;"><span style="font-size: 22px; font-weight: 800;">&lt; 8h</span><span style="font-size: 13px; color: #6B7280;">Suporte ágil</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- A Solução -->
+<section id="solucao" style="background: #F9FAFB; padding: 88px 0;">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 48px;">
+<div style="text-align: center; display: flex; flex-direction: column; gap: 12px; align-items: center;">
+<h2 style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 800; letter-spacing: -.02em; max-width: 700px;">Tudo o que seu escritório precisa para rodar sem falhas</h2>
+<p style="margin: 0; font-size: 17px; color: #4B5563;">Solução completa e sem burocracia para contadores e advogados.</p>
+</div>
+<div class="grid4" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px;">
+
+<div class="card" style="background: #ffffff; border: 1px solid #E5E7EB; border-radius: 18px; padding: 28px 24px; display: flex; flex-direction: column; gap: 14px;">
+<span style="align-self: flex-start; background: #FEE2E2; color: #DC2626; font-weight: 700; font-size: 15px; padding: 8px 12px; border-radius: 10px;">01</span>
+<h3 style="margin: 4px 0 0; font-size: 19px; font-weight: 700;">Multifuncional Pantum</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #4B5563;">Impressão, cópia e digitalização em rede compartilhada com a Linha Efficient Elite Pro.</p>
+</div>
+
+<div class="card" style="background: #ffffff; border: 1px solid #E5E7EB; border-radius: 18px; padding: 28px 24px; display: flex; flex-direction: column; gap: 14px;">
+<span style="align-self: flex-start; background: #FEE2E2; color: #DC2626; font-weight: 700; font-size: 15px; padding: 8px 12px; border-radius: 10px;">02</span>
+<h3 style="margin: 4px 0 0; font-size: 19px; font-weight: 700;">Instalação técnica</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #4B5563;">Configuração profissional feita por técnico especializado.</p>
+</div>
+
+<div class="card" style="background: #ffffff; border: 1px solid #E5E7EB; border-radius: 18px; padding: 28px 24px; display: flex; flex-direction: column; gap: 14px;">
+<span style="align-self: flex-start; background: #FEE2E2; color: #DC2626; font-weight: 700; font-size: 15px; padding: 8px 12px; border-radius: 10px;">03</span>
+<h3 style="margin: 4px 0 0; font-size: 19px; font-weight: 700;">Suporte em até 8h</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #4B5563;">Atendimento remoto e presencial via WhatsApp com rapidez.</p>
+</div>
+
+<div class="card" style="background: #ffffff; border: 1px solid #E5E7EB; border-radius: 18px; padding: 28px 24px; display: flex; flex-direction: column; gap: 14px;">
+<span style="align-self: flex-start; background: #FEE2E2; color: #DC2626; font-weight: 700; font-size: 15px; padding: 8px 12px; border-radius: 10px;">04</span>
+<h3 style="margin: 4px 0 0; font-size: 19px; font-weight: 700;">Sem multa contratual</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: #4B5563;">Precisou cancelar? Você encerra o contrato sem pagar multa.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Como funciona -->
+<section id="como-funciona" style="background: #ffffff; padding: 88px 0;">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 48px;">
+<div style="text-align: center; display: flex; flex-direction: column; gap: 12px; align-items: center;">
+<h2 style="margin: 0; font-size: 40px; font-weight: 800; letter-spacing: -.02em;">Como funciona em 4 etapas</h2>
+<p style="margin: 0; font-size: 17px; color: #4B5563;">Simples, rápido e direto ao ponto.</p>
+</div>
+<div class="grid4" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px;">
+
+<div style="position: relative; background: #F9FAFB; border: 1px solid #F0F0F0; border-radius: 18px; padding: 30px 24px 26px; display: flex; flex-direction: column; gap: 10px; overflow: hidden;">
+<span aria-hidden="true" style="position: absolute; top: -6px; right: 14px; font-size: 96px; font-weight: 800; color: #F1F1F1; line-height: 1;">1</span>
+<span style="position: relative; display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 12px; background: #111111; color: #ffffff; font-weight: 700;">1</span>
+<h3 style="position: relative; margin: 8px 0 0; font-size: 19px; font-weight: 700;">Contratação</h3>
+<p style="position: relative; margin: 0; font-size: 15px; line-height: 1.55; color: #4B5563;">A I9GED apresenta a proposta ideal para o seu volume.</p>
+</div>
+
+<div style="position: relative; background: #F9FAFB; border: 1px solid #F0F0F0; border-radius: 18px; padding: 30px 24px 26px; display: flex; flex-direction: column; gap: 10px; overflow: hidden;">
+<span aria-hidden="true" style="position: absolute; top: -6px; right: 14px; font-size: 96px; font-weight: 800; color: #F1F1F1; line-height: 1;">2</span>
+<span style="position: relative; display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 12px; background: #111111; color: #ffffff; font-weight: 700;">2</span>
+<h3 style="position: relative; margin: 8px 0 0; font-size: 19px; font-weight: 700;">Instalação</h3>
+<p style="position: relative; margin: 0; font-size: 15px; line-height: 1.55; color: #4B5563;">Equipamento configurado em rede para todos os computadores.</p>
+</div>
+
+<div style="position: relative; background: #F9FAFB; border: 1px solid #F0F0F0; border-radius: 18px; padding: 30px 24px 26px; display: flex; flex-direction: column; gap: 10px; overflow: hidden;">
+<span aria-hidden="true" style="position: absolute; top: -6px; right: 14px; font-size: 96px; font-weight: 800; color: #F1F1F1; line-height: 1;">3</span>
+<span style="position: relative; display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 12px; background: #111111; color: #ffffff; font-weight: 700;">3</span>
+<h3 style="position: relative; margin: 8px 0 0; font-size: 19px; font-weight: 700;">Uso contínuo</h3>
+<p style="position: relative; margin: 0; font-size: 15px; line-height: 1.55; color: #4B5563;">Sua equipe imprime e digitaliza sem travamentos.</p>
+</div>
+
+<div style="position: relative; background: #F9FAFB; border: 1px solid #F0F0F0; border-radius: 18px; padding: 30px 24px 26px; display: flex; flex-direction: column; gap: 10px; overflow: hidden;">
+<span aria-hidden="true" style="position: absolute; top: -6px; right: 14px; font-size: 96px; font-weight: 800; color: #F1F1F1; line-height: 1;">4</span>
+<span style="position: relative; display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 12px; background: #111111; color: #ffffff; font-weight: 700;">4</span>
+<h3 style="position: relative; margin: 8px 0 0; font-size: 19px; font-weight: 700;">Suporte ágil</h3>
+<p style="position: relative; margin: 0; font-size: 15px; line-height: 1.55; color: #4B5563;">Atendimento rápido em até 8 horas úteis se houver falhas.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Valores -->
+<section id="valores" style="background: #111111; color: #ffffff; padding: 96px 0;">
+<div class="wrap" style="display: flex; flex-direction: column; gap: 52px;">
+<div style="text-align: center; display: flex; flex-direction: column; gap: 14px; align-items: center;">
+<span style="background: #1F1F1F; border: 1px solid #2A2A2A; color: #F87171; font-size: 13px; font-weight: 800; letter-spacing: .08em; padding: 7px 16px; border-radius: 999px;">TRANSPARÊNCIA TOTAL</span>
+<h2 style="margin: 0; font-size: 42px; font-weight: 800; letter-spacing: -.02em;">Locação Pantum Linha Efficient Elite Pro</h2>
+<p style="margin: 0; font-size: 17px; color: #9CA3AF;">Investimento previsível para o seu escritório.</p>
+</div>
+<div class="grid2" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; align-items: start;">
+<div style="background: #1C1C1C; border: 1px solid #2A2A2A; border-radius: 24px; padding: 34px; display: flex; flex-direction: column; gap: 4px;">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-bottom: 18px;">
+<div style="display: flex; flex-direction: column; gap: 6px;">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: .1em; color: #9CA3AF;">MENSALIDADE FIXA</span>
+<span style="font-size: 46px; font-weight: 800; line-height: 1;">R$ 210<span style="font-size: 20px; font-weight: 400; color: #9CA3AF;">,00/mês</span></span>
+</div>
+<span style="background: #3B1414; border: 1px solid #7F1D1D; color: #FCA5A5; font-size: 13px; font-weight: 800; letter-spacing: .05em; padding: 8px 14px; border-radius: 10px;">2.000 PÁGINAS INCLUSAS</span>
+</div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 16px 0; border-bottom: 1px solid #2A2A2A; font-size: 15px;"><span style="color: #9CA3AF;">Instalação e manutenção</span><b>Inclusas no contrato</b></div>
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 16px 0; border-bottom: 1px solid #2A2A2A; font-size: 15px;"><span style="color: #9CA3AF;">Multa por cancelamento</span><b>R$ 0,00 (sem multa contratual)</b></div>
+<p style="margin: 16px 0 22px; font-size: 13px; color: #9CA3AF;">* Suprimentos (toner) não inclusos nesta oferta promocional.</p>
+<a class="btn" target="_blank" rel="noopener" href="https://wa.me/5551980189946?text=Ol%C3%A1!%20Tenho%20interesse%20na%20loca%C3%A7%C3%A3o%20da%20multifuncional%20Pantum%20Linha%20Efficient%20Elite%20Pro." style="display: flex; justify-content: center; align-items: center; background: #DC2626; color: #ffffff; font-weight: 700; font-size: 17px; padding: 18px; border-radius: 14px; box-shadow: 0 14px 30px rgba(220,38,38,.3);">Contratar Solução I9GED</a>
+</div>
+<div style="background: #1C1C1C; border: 1px solid #2A2A2A; border-radius: 24px; padding: 34px; display: flex; flex-direction: column; gap: 22px;">
+<h3 style="margin: 0; font-size: 24px; font-weight: 700;">Comprar ou alugar com a I9GED?</h3>
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<span style="font-size: 13px; font-weight: 800; letter-spacing: .08em; color: #F87171;">COMPRANDO UMA IMPRESSORA</span>
+<ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;color:#D1D5DB;">
+<li style="display:flex;gap:12px;font-size:15px;line-height:1.5;"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F87171" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M18 6 6 18M6 6l12 12"></path></svg><span>Alto investimento inicial, que sai do caixa do escritório</span></li>
+<li style="display:flex;gap:12px;font-size:15px;line-height:1.5;"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F87171" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M18 6 6 18M6 6l12 12"></path></svg><span>Quando quebra, o problema e o conserto são seus</span></li>
+<li style="display:flex;gap:12px;font-size:15px;line-height:1.5;"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F87171" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M18 6 6 18M6 6l12 12"></path></svg><span>Equipamento desvaloriza e fica ultrapassado</span></li>
+</ul>
+</div>
+<div style="height:1px;background:#2A2A2A"></div>
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<span style="font-size: 13px; font-weight: 800; letter-spacing: .08em; color: #4ADE80;">ALUGANDO COM A I9GED</span>
+<ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;color:#ffffff;">
+<li style="display:flex;gap:12px;font-size:15px;line-height:1.5;"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M20 6 9 17l-5-5"></path></svg><span>Zero investimento inicial: só uma mensalidade fixa</span></li>
+<li style="display:flex;gap:12px;font-size:15px;line-height:1.5;"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M20 6 9 17l-5-5"></path></svg><span>Instalação, manutenção e suporte em até 8h por nossa conta</span></li>
+<li style="display:flex;gap:12px;font-size:15px;line-height:1.5;"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M20 6 9 17l-5-5"></path></svg><span>Sem multa contratual: se precisar, cancela sem pagar nada a mais</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Dúvidas -->
+<section id="duvidas" style="background: #ffffff; padding: 96px 0;">
+<div class="wrap" style="max-width: 800px; display: flex; flex-direction: column; gap: 44px;">
+<div style="text-align: center; display: flex; flex-direction: column; gap: 12px;">
+<h2 style="margin: 0; font-size: 40px; font-weight: 800; letter-spacing: -.02em;">Dúvidas frequentes</h2>
+<p style="margin: 0; font-size: 17px; color: #4B5563;">Respostas rápidas para sua tomada de decisão.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<details class="faq" style="background:#F9FAFB;border:1px solid #E5E7EB;border-radius:16px;overflow:hidden;">
+<summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 24px;font-size:17px;font-weight:700;cursor:pointer;list-style:none;">
+<span>A impressora é comprada ou alugada?</span><svg class="chev" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></summary>
+<p style="margin:0;padding:0 24px 22px;font-size:15px;line-height:1.65;color:#4B5563;">É alugada. A multifuncional da Linha Efficient Elite Pro continua sendo da I9GED, e você paga apenas a mensalidade fixa, sem investimento inicial no equipamento.</p></details>
+<details class="faq" style="background:#F9FAFB;border:1px solid #E5E7EB;border-radius:16px;overflow:hidden;">
+<summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 24px;font-size:17px;font-weight:700;cursor:pointer;list-style:none;">
+<span>Qual é o valor mensal?</span><svg class="chev" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></summary>
+<p style="margin:0;padding:0 24px 22px;font-size:15px;line-height:1.65;color:#4B5563;">A mensalidade é fixa: R$ 210,00 por mês, com franquia de 2.000 páginas, instalação e manutenção inclusas. Sem surpresas no orçamento do escritório.</p></details>
+<details class="faq" style="background:#F9FAFB;border:1px solid #E5E7EB;border-radius:16px;overflow:hidden;">
+<summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 24px;font-size:17px;font-weight:700;cursor:pointer;list-style:none;">
+<span>Como funciona o suporte técnico em caso de defeito?</span><svg class="chev" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></summary>
+<p style="margin:0;padding:0 24px 22px;font-size:15px;line-height:1.65;color:#4B5563;">Você aciona a I9GED pelo WhatsApp e recebe atendimento remoto ou presencial em até 8 horas úteis.</p></details>
+<details class="faq" style="background:#F9FAFB;border:1px solid #E5E7EB;border-radius:16px;overflow:hidden;">
+<summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 24px;font-size:17px;font-weight:700;cursor:pointer;list-style:none;">
+<span>Posso cancelar a locação se precisar?</span><svg class="chev" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></summary>
+<p style="margin:0;padding:0 24px 22px;font-size:15px;line-height:1.65;color:#4B5563;">Sim. Não há multa contratual: se precisar, você encerra a locação sem nenhum custo de cancelamento.</p></details>
+
+</div>
+</div>
+</section>
+
+<!-- CTA final -->
+<section style="background: #F9FAFB; padding: 96px 0;">
+<div class="wrap" style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px;">
+<img src="logo.png" alt="I9GED — Gestão de Dispositivos" style="width: 150px; height: auto; mix-blend-mode: multiply;">
+<h2 style="margin: 0; font-size: 42px; line-height: 1.15; font-weight: 800; letter-spacing: -.02em; max-width: 640px;">Sua equipe merece trabalhar sem interrupções.</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #4B5563; max-width: 560px;">Garanta uma multifuncional Pantum da Linha Efficient Elite Pro para o seu escritório por apenas <b style="color: #111111;">R$ 210,00/mês</b>.</p>
+<a class="btn" target="_blank" rel="noopener" href="https://wa.me/5551980189946?text=Ol%C3%A1!%20Tenho%20interesse%20na%20loca%C3%A7%C3%A3o%20da%20multifuncional%20Pantum%20Linha%20Efficient%20Elite%20Pro." style="display: inline-flex; align-items: center; gap: 12px; background: #DC2626; color: #ffffff; font-weight: 700; font-size: 17px; padding: 18px 34px; border-radius: 14px; box-shadow: 0 14px 30px rgba(220,38,38,.28);">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"></path></svg>
+Falar com especialista I9GED no WhatsApp
+</a>
+<p style="margin: 8px 0 0; font-size: 14px; color: #6B7280;">I9GED — Gestão de Dispositivos · Mais de 17 anos de experiência tecnológica.</p>
+</div>
+</section>
+
+<!-- Rodapé -->
+<footer style="background: #0B0B0B; color: #ffffff; padding: 30px 0;">
+<div class="wrap foot" style="display: flex; justify-content: space-between; align-items: center; gap: 24px;">
+<div style="display: flex; align-items: center; gap: 10px;">
+<span style="display: inline-flex; background: #ffffff; border-radius: 8px; padding: 3px;"><img src="logo-icone.png" alt="" style="width: 26px; height: 26px; object-fit: contain;"></span>
+<b style="font-size: 15px;">I9GED Gestão de Dispositivos</b>
+</div>
+<span style="font-size: 14px; color: #9CA3AF;">© 2026 I9GED. Todos os direitos reservados.</span>
+<nav aria-label="Rodapé" style="display: flex; gap: 22px; font-size: 14px; color: #D1D5DB;">
+<a href="#duvidas">FAQ</a>
+<a target="_blank" rel="noopener" href="https://wa.me/5551980189946?text=Ol%C3%A1!%20Tenho%20interesse%20na%20loca%C3%A7%C3%A3o%20da%20multifuncional%20Pantum%20Linha%20Efficient%20Elite%20Pro.">WhatsApp</a>
+</nav>
+</div>
+</footer>
+
+</div>
+
+<a class="float-wa" target="_blank" rel="noopener" href="https://wa.me/5551980189946?text=Ol%C3%A1!%20Tenho%20interesse%20na%20loca%C3%A7%C3%A3o%20da%20multifuncional%20Pantum%20Linha%20Efficient%20Elite%20Pro." aria-label="Falar no WhatsApp"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"></path></svg></a>
+<script>
+(function(){
+  var ID='V4U0i-w0lzI';
+  var thumb=document.getElementById('vthumb'),frame=document.getElementById('vframe');
+  var embedded=false; try{embedded=window.self!==window.top}catch(e){embedded=true}
+  thumb.addEventListener('click',function(e){
+    if(embedded) return;
+    e.preventDefault();
+    frame.innerHTML='<iframe src="https://www.youtube.com/embed/'+ID+'?autoplay=1&rel=0" title="Vídeo" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+    frame.hidden=false; thumb.hidden=true;
+  });
+})();
+</script>
+</body>
+</html>
